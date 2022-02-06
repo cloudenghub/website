@@ -7,3 +7,5 @@ googleAnalytics = ""
 
 # Enter your disqus shortname to enable comments
 disqusShortname = ""
+
+paginate = 10
