@@ -6,9 +6,11 @@
 <div id="parallax">
   <section>
       <div class="parallax-one">
-        <div id="logo_banner" class="container-sm">
-          <div>
-            <img class="img-fluid rounded mx-auto d-block" src="/img/logo_transparent_crop.png" alt="CloudEngHub">
+        <div id="logo_banner" class="container">
+          <div class="position-relative">
+            <div class="position-absolute top-50 start-50 translate-middle">
+              <img class="img-fluid mx-auto d-block" src="/img/logo_transparent_crop.png" alt="CloudEngHub">
+            </div>
           </div>
           {{ with .Site.Params.description }}<h2>{{ . }}</h2>{{ end }}
         </div>
