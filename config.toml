@@ -9,3 +9,9 @@ googleAnalytics = ""
 disqusShortname = ""
 
 paginate = 10
+
+[params]
+  description = 'CloudEngHub is a community for Cloud Engineering enthusiasts to get together, discuss all things cloud technology, and publish tech content.'
+  images = ['site-feature-image.jpg']
+  title = 'My cool site'
+

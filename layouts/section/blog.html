@@ -1,1 +1,11 @@
 <h1>{{ with .Site.GetPage "section" "blog" }}{{ .Title }}{{ end }}</h1>
+{{ template "_internal/pagination.html" . }}
+{{ range .Paginator.Pages }}
+   {{ .Title }}
+{{ end }}
+{{ if .Paginator.HasPrev }}
+    <a href="{{ .Paginator.Prev.URL }}">  Prev </a>
+{{ end }}
+{{ if .Paginator.HasNext }}
+    <a href="{{ .Paginator.Next.URL }}">  Next </a>
+{{ end }}
