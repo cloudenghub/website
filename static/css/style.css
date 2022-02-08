@@ -73,6 +73,16 @@
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
 }
+
+.center_bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+#scroll_arrow a {
+  color: white;
+  text-decoration: none !important;
+}
  
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
@@ -84,6 +94,11 @@
   60% {
     transform: translateY(-15px);
   }
+}
+
+#logo_banner {
+  padding-top: 15vh;
+  padding-bottom: 10vh;
 }
 
 /*
@@ -123,7 +138,7 @@ body {
   position: relative;
 } */
 
-/* Override UGG site */
+/* Override site */
 #main {width: 100%; padding:0;}
 .content-asset p {margin:0 auto;}
 .breadcrumb {display:none;}
@@ -138,7 +153,7 @@ body {
 /* Typography */
 /**************************/
 #parallax h1 {font-family:'Oswald', sans-serif; font-size:10em; font-weight:400; text-align:center; color:white; padding:0; margin:0;}
-#parallax h2 {font-family:'Oswald', sans-serif; font-size:1.25em; letter-spacing:10px; text-align:center; color:white; font-weight:400; z-index:10; opacity:.9;}
+#parallax h2 {font-family:'Oswald', sans-serif; font-size:1.5em; letter-spacing:10px; text-align:center; color:white; font-weight:400; z-index:10; opacity:.9;}
 #parallax h3 {font-family:'Oswald', sans-serif; font-size:14px; line-height:0; font-weight:400; letter-spacing:8px; text-align:center; color:white;}
 #parallax p {font-family:'Source Sans Pro', sans-serif; font-weight:400; font-size:14px; line-height:24px;}
 .first-character {color: #000000; font-weight:400; float: left; font-size: 84px; line-height: 64px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: 'Source Sans Pro', sans-serif;}
