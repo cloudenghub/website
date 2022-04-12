@@ -1,22 +1,14 @@
 {{ define "main" }}
-<h1>{{ with .Site.GetPage "section" "blog" }}{{ .Title }}{{ end }}</h1>
 <div id="parallax">
     <section>
-        <div class="parallax-one">
+        <div class="parallax-one" style="background-image: url('/img/banners/{{ .Params.banner_image_1 }}');">
           <div id="logo_banner" class="position-absolute top-50 start-50 translate-middle"> <!-- This is the container to center-->
+            <h1>{{ with .Site.GetPage "section" "blog" }}{{ .Title }}{{ end }}</h1>
             {{ with .Params.description }}<h2>{{ . }}</h2>{{ end }}
           </div>
         </div>
     </section>
     
-    <!-- <div class="arrow bounce">
-      <a class="fa fa-arrow-down fa-2x" href="#"></a>
-    </div> -->
-  
-    <div id="scroll_arrow" class="d-flex justify-content-center align-items-bottom">
-      <!-- <a class="fa fa-chevron-down fa-5x bounce arrow center_bottom" href="#"></a> -->
-      <img src="https://www.codehaven.co.uk/wp-content/uploads/2019/12/arrow-down-white-300x157.png" class="img-fluid bounce arrow center_bottom">
-    </div>
     <section>
       <div class="container my-5">
       <!-- <div class="block"> -->
